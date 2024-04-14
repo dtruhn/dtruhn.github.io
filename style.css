@@ -38,9 +38,9 @@ nav {
 }
 
 .nav-links {
-  gap: 2rem;
+  gap: 1.7rem;
   list-style: none;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 a {
@@ -142,4 +142,31 @@ a:hover {
 
 .hamburger-icon span:first-child {
   transform: none;
+}
+
+/* Text */
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+h3 {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Paragraphs */
+
+p {
+  font-size: 1.5rem;
+  margin: 5rem 15%;
 }
