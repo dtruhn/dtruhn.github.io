@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UKA Radiologie</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueriess.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">
+        <!-- <img src="assets/uka-logo.png" alt="UKA Logo"> -->UKA Radiologie
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about-us">About us</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#our-research">Our research</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#funding">Funding</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#impressum">Impressum</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">
+            <!-- <img src="assets/uka-logo.png" alt="UKA Logo"> -->UKA Radiologie
+          </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about-us" onclick="toggleMenu()">About us</a></li>
+          <li><a href="#team" onclick="toggleMenu()">Team</a></li>
+          <li>
+            <a href="#our-research" onclick="toggleMenu()">Our research</a>
+          </li>
+          <li>
+            <a href="#publications" onclick="toggleMenu()">Publications</a>
+          </li>
+          <li><a href="#funding" onclick="toggleMenu()">Funding</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li><a href="#impressum" onclick="toggleMenu()">Impressum</a></li>
+        </div>
+      </div>
+    </nav>
+    <script src="script.js"></script>
+  </body>
+</html>
