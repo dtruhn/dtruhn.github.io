@@ -175,3 +175,29 @@ p {
   text-align: left;
   margin: 5rem 15%;
 }
+
+.img-odelia {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+.img-EU {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+figcaption {
+  font-size: 14px;
+  font-weight: bold;
+  color: grey;
+  margin: 5rem 15%;
+  margin-top: 0%;
+  padding: 5px;
+}
+.facts {
+  text-align: left;
+  margin: 5rem 15%;
+}
