@@ -201,3 +201,30 @@ figcaption {
   text-align: left;
   margin: 5rem 15%;
 }
+
+/* team */
+.team-member {
+  display: block;
+  margin: 1rem 15%;
+  padding: 2rem;
+}
+.team-member div {
+  display: block;
+  width: 100%;
+}
+.team-member img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  float: left;
+}
+.team-member h3 {
+  margin: 0;
+  text-align: left;
+}
+
+.team-member p {
+  margin: 0;
+  text-align: left;
+}
