@@ -218,6 +218,8 @@ figcaption {
   height: 150px;
   object-fit: cover;
   float: left;
+  margin-right: 2rem ;
+  margin-bottom: 0;
 }
 .team-member h3 {
   margin: 0;
