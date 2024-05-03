@@ -8,6 +8,7 @@
     </title>
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../mediaqueriess.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <nav id="desktop-nav">
@@ -20,7 +21,7 @@
           <li><a href="index.html">About us</a></li>
           <li><a href="team.html">Team</a></li>
           <li><a href="our-research.html">Our research</a></li>
-          <li><a href="publications.html">Publications</a></li>
+
           <li><a href="funding.html">Funding</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="impressum.html">Impressum</a></li>
@@ -46,9 +47,7 @@
           <li>
             <a href="our-research.html" onclick="toggleMenu()">Our research</a>
           </li>
-          <li>
-            <a href="publications.html" onclick="toggleMenu()">Publications</a>
-          </li>
+
           <li>
             <a href="funding.html" onclick="toggleMenu()">Funding</a>
           </li>
@@ -69,6 +68,141 @@
         detection, and superordinate machine learning frameworks.
       </p>
     </div>
-    <script src="script.js"></script>
+    <div class="publications">
+      <h1>Publications</h1>
+      <div class="row">
+        <p>
+          <b
+            ><svg
+              width="1em"
+              height="1em"
+              viewBox="0 0 16 16"
+              class="bi bi-book"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1 2.828v9.923c.918-.35 2.107-.692 3.287-.81 1.094-.111 2.278-.039 3.213.492V2.687c-.654-.689-1.782-.886-3.112-.752-1.234.124-2.503.523-3.388.893zm7.5-.141v9.746c.935-.53 2.12-.603 3.213-.493 1.18.12 2.37.461 3.287.811V2.828c-.885-.37-2.154-.769-3.388-.893-1.33-.134-2.458.063-3.112.752zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"
+              />
+            </svg>
+            Our current and past publications:</b
+          >
+        </p>
+      </div>
+      <!--div class to display publications-->
+      <div class="row publications" id="displayAuthors"></div>
+    </div>
+    <script>
+      function toggleMenu() {
+        const menu = document.querySelector(".menu-links");
+        const icon = document.querySelector(".hamburger-icon");
+        menu.classList.toggle("open");
+        icon.classList.toggle("open");
+      }
+
+      // outer loop [2020]
+
+      var years = [
+        "2023",
+        "2022",
+        "2021",
+        "2020",
+        "2019",
+        "2018",
+        "2017",
+        "2016",
+        "2015",
+      ];
+      var div_container = document.getElementById("displayAuthors");
+
+      //div_container.innerHTML += '<div class="w-100"></div>';
+      //get publications from sven and daniel
+      var term_2020 =
+        "Nebelung_S[AUTH]+AND+2015[pdat]:2030[pdat]+OR+Truhn_D[AUTH]+AND+2015[pdat]:2030[pdat]&retmax=200";
+
+      var query = term_2020; //+ '+OR+' + term_2019;
+      var out_url =
+        "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=" +
+        query;
+      console.log(out_url);
+      const response = fetch(out_url)
+        .then((response) => response.text())
+        .then((data) => {
+          ids = $(data).find("IdList").text();
+          var id_list = ids.split("\n");
+          // remove first and last entry
+          id_list.splice(id_list.length - 1, 1);
+          id_list.splice(0, 1);
+          console.log(id_list);
+          var string_ids = "";
+          for (i = 0; i < id_list.length; i++) {
+            string_ids += id_list[i] + ",";
+          }
+          console.log(string_ids);
+          var url =
+            "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=" +
+            string_ids +
+            "version=2.0&sort=pubdate";
+          console.log(url);
+          const response_data = fetch(url)
+            .then((response) => response.text())
+            .then((data_) => {
+              console.log("test");
+              console.log(data_);
+              docsum = $(data_).find("Docsum");
+              for (i = 0; i < docsum.length; i++) {
+                var id = docsum[i].getElementsByTagName("Id");
+                id = id[0].innerHTML;
+                nodes = docsum[i].getElementsByTagName("Item");
+                var str_author = "";
+                var str_title = "";
+                var str_date = "";
+                var str_published = "";
+                for (l = 0; l < nodes.length - 1; l++) {
+                  elem = nodes.item(l);
+                  if (!(elem.childNodes[0] === undefined)) {
+                    var value = elem.childNodes[0].nodeValue;
+                    if (elem.getAttribute("Name") == "Author") {
+                      str_author += value + ", ";
+                    }
+                    if (elem.getAttribute("Name") == "Title") {
+                      str_title = value;
+                    }
+                    if (elem.getAttribute("Name") == "PubDate") {
+                      str_date = value;
+                    }
+                    if (elem.getAttribute("Name") == "FullJournalName") {
+                      str_published = value;
+                    }
+                  }
+                }
+
+                //var t = authors[0].getElementById("AuthorList");
+                //console.log(authors[0].getNodeValue(PubDate));
+                div_container.innerHTML +=
+                  `
+                              <div class="row">
+                                      <div class="col-md-12">
+                                          <h6>` +
+                  str_date +
+                  `:</h6>
+                                          <p>` +
+                  str_author +
+                  `<br>
+                                          <b><a href="https://pubmed.ncbi.nlm.nih.gov/` +
+                  id +
+                  `">` +
+                  str_title +
+                  `</a></b><br>
+                                          In: ` +
+                  str_published +
+                  `</p>
+                                      </div>
+                                  </div>`;
+              }
+            });
+        });
+    </script>
   </body>
 </html>
