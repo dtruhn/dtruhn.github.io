@@ -34,7 +34,7 @@ nav,
 nav {
   justify-content: space-around;
   align-items: center;
-  height: 20vh;
+  height: 8vh;
   background-color: #07090a;
 }
 
@@ -60,17 +60,19 @@ a:hover {
 .logo {
   font-size: 1rem;
 }
-#logo-img {
+/* removed logo */
+/* #logo-img {
   width: 102.4px;
   margin-top: 4rem;
   margin-right: 1rem;
   float: left;
-}
+} */
 
 .logo p {
-  margin-top: 6rem;
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #ffffff;
+  white-space: nowrap;
+  margin-left: auto;
 }
 
 .logo:hover {
@@ -184,9 +186,10 @@ h3 {
 
 p {
   font-size: 1.5rem;
-  margin: 5rem 15%;
-  text-align: justify;
+  margin: 5rem 20%;
+  /* text-align: justify; */
   color: #ffffff;
+  line-height: 120%;
 }
 
 #law {
@@ -264,9 +267,10 @@ h6 {
 .panel-container {
   display: flex;
   justify-content: space-around;
-  padding: 20px;
-  background-color: #121618; /* Dark background for the container */
+  padding: 5%;
+  background-color: #121618;
 }
+
 
 .panel h2 {
   margin-top: 0.5em;
