@@ -49,17 +49,18 @@ a {
   color: #ffffff;
   text-decoration: none;
   text-decoration-color: white;
+  text-underline-offset: 1rem;
 }
 
 a:hover {
-  color: #2a373b;
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: #2a373b;
+  color: #919191;
+  text-decoration-color: #919191;
 }
 
 .logo {
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 .logo p {
