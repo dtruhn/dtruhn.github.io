@@ -170,6 +170,7 @@ h2 {
   -webkit-background-clip: text;
   background-clip: text;
   background-image: linear-gradient(to left, #80fbbe 0%, #4bcfe0 100%);
+  font-weight: normal;
 }
 
 h3 {
@@ -189,7 +190,7 @@ p {
   margin: 5rem 20%;
   /* text-align: justify; */
   color: #ffffff;
-  line-height: 120%;
+  line-height: 170%;
 }
 
 #law {
