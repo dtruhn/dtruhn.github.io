@@ -184,7 +184,7 @@ h3 {
 p {
   font-size: 1.5rem;
   margin: 2rem 20%;
-  /* text-align: justify; */
+  text-align: justify;
   color: #c7c7c7;
   line-height: 150%;
 }
@@ -283,6 +283,7 @@ h6 {
   font-size: 1.0em;
   line-height: 1.4;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .icon {
