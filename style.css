@@ -8,7 +8,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #101010;
+  background-color: #131313;
 }
 
 html {
@@ -165,7 +165,7 @@ h1 {
 h2 {
   font-size: 2.5rem;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
@@ -187,9 +187,9 @@ h3 {
 
 p {
   font-size: 1.5rem;
-  margin: 3rem 20%;
+  margin: 2rem 20%;
   /* text-align: justify; */
-  color: #b7b7b7;
+  color: #c7c7c7;
   line-height: 150%;
 }
 
@@ -268,20 +268,21 @@ h6 {
 .panel-container {
   display: flex;
   justify-content: space-around;
-  padding: 5%;
-  background-color: #121618;
+  padding: 3% 7%;
+  background-color: #000000;
 }
 
 
 .panel h2 {
   margin-top: 0.5em;
-  font-size: 1.5em;
+  font-size: 1.6em;
   color: #ffffff;
 }
 
 .panel p {
-  font-size: 1.2em;
+  font-size: 1.0em;
   line-height: 1.4;
+  margin-bottom: 1rem;
 }
 
 .icon {
@@ -294,37 +295,37 @@ h6 {
 .icon-team img {
   width: 30%;
   display: block;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .icon-research img {
   width: 30%;
   display: block;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .icon-funding img {
   width: 30%;
   display: block;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .icon-contact-us img {
   width: 30%;
   display: block;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .panel-container a {
@@ -339,7 +340,7 @@ h6 {
 
 /* Footer */
 footer {
-  background-color: #07090a;
+  background-color: #131313;
   padding: 20px;
   text-align: center;
 }
