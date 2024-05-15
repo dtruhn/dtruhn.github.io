@@ -55,8 +55,8 @@ a {
 a:hover {
   text-decoration: underline;
   text-underline-offset: 1rem;
-  color: #919191;
-  text-decoration-color: #919191;
+  color: #80fbbe;
+  text-decoration-color: #80fbbe;
 }
 
 .logo {
@@ -151,7 +151,7 @@ h1 {
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  background-image: linear-gradient(to left, #80fbbe 0%, #4bcfe0 100%);
+  background-image: linear-gradient(to right, #80fbbe 40%, #4bcfe0 60%);
 }
 
 .header-content h1 {
@@ -313,6 +313,11 @@ h6 {
   box-sizing: border-box;
   border-radius: 10px;
   text-decoration: none;
+}
+
+.panel-container a:hover {
+  outline: 2px solid white;
+  box-shadow: 0 0 20px white;
 }
 
 /* Footer */
