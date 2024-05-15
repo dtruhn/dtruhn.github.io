@@ -149,7 +149,7 @@ a:hover {
 /* Text */
 
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
   margin-top: 2rem;
   color: transparent;
@@ -187,9 +187,9 @@ h3 {
 
 p {
   font-size: 1.5rem;
-  margin: 5rem 20%;
+  margin: 3rem 20%;
   /* text-align: justify; */
-  color: #ffffff;
+  color: #b7b7b7;
   line-height: 150%;
 }
 
