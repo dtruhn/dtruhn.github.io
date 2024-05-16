@@ -3,124 +3,127 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Lab for Artificial Intelligence in Medicine
-    </title>
+    <title>Lab for Artificial Intelligence in Medicine</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueriess.css" />
   </head>
   <body>
-    <nav id="desktop-nav">
-      <div class="logo">
-        <!-- <a href="index.html"
+    <div id="wrapper">
+      <nav id="desktop-nav">
+        <div class="logo">
+          <!-- <a href="index.html"
           ><img src="assets/logoplaceholder.svg" alt="our Logo" id="logo-img" />
         </a> -->
-        <a id="current" href="index.html">Truhn.ai</a>
-      </div>
-      <div>
-        <ul class="nav-links">
-          <!-- <li><a href="index.html" id="current">Home</a></li> -->
-          <li><a href="team.html">Team</a></li>
-          <li><a href="our-research.html">Research</a></li>
+          <a id="current" href="index.html">Truhn.ai</a>
+        </div>
+        <div>
+          <ul class="nav-links">
+            <!-- <li><a href="index.html" id="current">Home</a></li> -->
+            <li><a href="team.html">Team</a></li>
+            <li><a href="our-research.html">Research</a></li>
 
-          <li><a href="funding.html">Funding</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <!-- <li><a href="impressum.html">Impressum</a></li> -->
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">
-      <!--  <img src="assets/logoplaceholder.svg" alt="our Logo" id="logo-img" /> -->
+            <li><a href="funding.html">Funding</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <!-- <li><a href="impressum.html">Impressum</a></li> -->
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo">
+          <!--  <img src="assets/logoplaceholder.svg" alt="our Logo" id="logo-img" /> -->
         <p>
           TruhnLab
         </p>
-      </div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
         </div>
-        <div class="menu-links">
-          <li>
-            <a href="index.html" onclick="toggleMenu()">Home</a>
-          </li>
-          <li><a href="team.html" onclick="toggleMenu()">Team</a></li>
-          <li>
-            <a href="our-research.html" onclick="toggleMenu()">Research</a>
-          </li>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li>
+              <a href="index.html" onclick="toggleMenu()">Home</a>
+            </li>
+            <li><a href="team.html" onclick="toggleMenu()">Team</a></li>
+            <li>
+              <a href="our-research.html" onclick="toggleMenu()">Research</a>
+            </li>
 
-          <li>
-            <a href="funding.html" onclick="toggleMenu()">Funding</a>
-          </li>
-          <li>
-            <a href="contact.html" onclick="toggleMenu()">Contact</a>
-          </li>
-          <li>
-            <a href="impressum.html" onclick="toggleMenu()">Impressum</a>
-          </li>
+            <li>
+              <a href="funding.html" onclick="toggleMenu()">Funding</a>
+            </li>
+            <li>
+              <a href="contact.html" onclick="toggleMenu()">Contact</a>
+            </li>
+            <li>
+              <a href="impressum.html" onclick="toggleMenu()">Impressum</a>
+            </li>
+          </div>
         </div>
-      </div>
-    </nav>
-    <header>
-      <!-- <div class="header-image">
+      </nav>
+      <header>
+        <!-- <div class="header-image">
             <img src="assets/uka-radiologie.jpg" alt="Lab for Artificial Intelligence in Medicine @ Uniklinik RWTH Aachen" />
         </div> -->
-    </header>
-    <div class="header-content">
-      <h1>Welcome to Our Lab</h1>
-      <p>
-        We are a young, diverse, and interdisciplinary team of scientists
-        dedicated to developing deep learning methods for medical applications.
-        Our goal is to extract valuable knowledge from clinical routine data and
-        advance diagnostics and treatment in precision medicine.
-      </p>
-      <p>
-        We are based in Aachen within the Deparment of Diagnostic and
-        Interventional Radiology of RWTH Aachen in close proximity to the
-        Netherlands and Belgium.
-      </p>
-    </div>
-    <div class="panel-container">
-      <a href="team.html">
-      <div class="panel">
-        <div class="icon-team">
-          <img src="assets/team.svg" alt="Team" />
-        </div>
-        <h2>OUR TEAM</h2>
-        <p>Learn about us and the talented individuals in our group.</p>
-      </div>
-      </a>
-      <a href="our-research.html"> 
-      <div class="panel">
-        <div class="icon-research">
-          <img src="assets/our-reasearch.svg" alt="Research" />
-        </div>
-        <h2>OUR RESEARCH</h2>
-        <p>See what we are working on and learn about our published papers.</p>
-      </div>
-      </a>
-      <a href="funding.html">
-      <div class="panel">
-        <div class="icon-funding">
-          <img src="assets/funding.svg" alt="Funding" />
-        </div>
-        <h2>OUR FUNDING</h2>
-        <p>Discover how our research is supported by our funders.</p>
-      </div>
-      </a>
-      <a href="contact.html">
-      <div class="panel">
-        <div class="icon-contact-us">
-          <img src="assets/contact.svg" alt="Contact Us" />
-        </div>
-        <h2>CONTACT US</h2>
+      </header>
+      <div class="header-content">
+        <h1>Welcome to Our Lab</h1>
         <p>
-          Get in touch with us for potential collaborations or to join us.
+          We are a young, diverse, and interdisciplinary team of scientists
+          dedicated to developing deep learning methods for medical
+          applications. Our goal is to extract valuable knowledge from clinical
+          routine data and advance diagnostics and treatment in precision
+          medicine.
+        </p>
+        <p>
+          We are based in Aachen within the Deparment of Diagnostic and
+          Interventional Radiology of RWTH Aachen in close proximity to the
+          Netherlands and Belgium.
         </p>
       </div>
-      </a>
+      <div class="panel-container">
+        <a href="team.html">
+          <div class="panel">
+            <div class="icon-team">
+              <img src="assets/team.svg" alt="Team" />
+            </div>
+            <h2>OUR TEAM</h2>
+            <p>Learn about us and the talented individuals in our group.</p>
+          </div>
+        </a>
+        <a href="our-research.html">
+          <div class="panel">
+            <div class="icon-research">
+              <img src="assets/our-reasearch.svg" alt="Research" />
+            </div>
+            <h2>OUR RESEARCH</h2>
+            <p>
+              See what we are working on and learn about our published papers.
+            </p>
+          </div>
+        </a>
+        <a href="funding.html">
+          <div class="panel">
+            <div class="icon-funding">
+              <img src="assets/funding.svg" alt="Funding" />
+            </div>
+            <h2>OUR FUNDING</h2>
+            <p>Discover how our research is supported by our funders.</p>
+          </div>
+        </a>
+        <a href="contact.html">
+          <div class="panel">
+            <div class="icon-contact-us">
+              <img src="assets/contact.svg" alt="Contact Us" />
+            </div>
+            <h2>CONTACT US</h2>
+            <p>
+              Get in touch with us for potential collaborations or to join us.
+            </p>
+          </div>
+        </a>
+      </div>
     </div>
     <footer>
       <div class="footer-content">
