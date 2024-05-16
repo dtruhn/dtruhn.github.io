@@ -63,8 +63,8 @@ a {
 a:hover {
   text-decoration: underline;
   text-underline-offset: 1rem;
-  color: #919191;
-  text-decoration-color: #919191;
+  color: #80fbbe;
+  text-decoration-color: #80fbbe;
 }
 
 .logo {
@@ -159,7 +159,7 @@ h1 {
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  background-image: linear-gradient(to left, #80fbbe 0%, #4bcfe0 100%);
+  background-image: linear-gradient(to right, #80fbbe 40%, #4bcfe0 60%);
 }
 
 
@@ -193,7 +193,7 @@ h3 {
 p {
   font-size: 1.5rem;
   margin: 2rem 20%;
-  /* text-align: justify; */
+  text-align: justify;
   color: #c7c7c7;
   line-height: 150%;
 }
@@ -292,6 +292,7 @@ h6 {
   font-size: 1.0em;
   line-height: 1.4;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .icon {
@@ -321,6 +322,11 @@ h6 {
   box-sizing: border-box;
   border-radius: 10px;
   text-decoration: none;
+}
+
+.panel-container a:hover {
+  outline: 2px solid white;
+  box-shadow: 0 0 20px white;
 }
 
 /* Footer */
