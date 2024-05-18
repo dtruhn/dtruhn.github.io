@@ -1,5 +1,4 @@
 :root {
-  --color-font: rgb(85, 85, 85);
   --color-background: #131313;
   --color-navbar: #07090a;
   --color-link: #ffffff;
@@ -33,10 +32,6 @@ body {
 
 html {
   scroll-behavior: smooth;
-}
-
-p {
-  color: var(--color-font);
 }
 
 a,
