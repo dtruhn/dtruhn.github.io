@@ -163,7 +163,11 @@ a:hover {
 
 /* Text */
 
-h1 {
+h1,
+.header-content h1,
+h2,
+h3,
+h6 {
   font-size: 4rem;
   text-align: center;
   margin-top: 2rem;
@@ -183,31 +187,10 @@ h1 {
 
 h2 {
   font-size: 2.5rem;
-  text-align: center;
-  margin-top: 1rem;
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  background-image: linear-gradient(
-    to right,
-    var(--color-text-gradient-start) 40%,
-    var(--color-text-gradient-end) 60%
-  );
-  font-weight: normal;
 }
 
 h3 {
   font-size: 2rem;
-  text-align: center;
-  margin-top: 2rem;
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  background-image: linear-gradient(
-    to right,
-    var(--color-text-gradient-start) 40%,
-    var(--color-text-gradient-end) 60%
-  );
 }
 
 /* Paragraphs */
@@ -289,16 +272,6 @@ figcaption {
 
 h6 {
   font-size: 1.5rem;
-  text-align: center;
-  margin-top: 2rem;
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  background-image: linear-gradient(
-    to right,
-    var(--color-text-gradient-start) 40%,
-    var(--color-text-gradient-end) 60%
-  );
 }
 
 .panel-container {
