@@ -1,3 +1,19 @@
+:root {
+  --color-font: rgb(85, 85, 85);
+  --color-background: #131313;
+  --color-navbar: #07090a;
+  --color-link: #ffffff;
+  --color-link-hover: #80fbbe;
+  --color-text-gradient-start: #80fbbe;
+  --color-text-gradient-end: #4bcfe0;
+  --color-paragraph: #c7c7c7;
+  --color-caption: grey;
+  --color-panel-background: #000000;
+  --color-panel-font: #ffffff;
+  --color-panel-link: #21282b;
+  --color-footer: #131313;
+}
+
 /* Global Styles */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
@@ -9,7 +25,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #131313;
+  background-color: var(--color-background);
   height: 100%;
   margin: 0;
   padding: 0;
@@ -20,7 +36,7 @@ html {
 }
 
 p {
-  color: rgb(85, 85, 85);
+  color: var(--color-font);
 }
 
 a,
@@ -44,7 +60,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 8vh;
-  background-color: #07090a;
+  background-color: var(--color-navbar);
 }
 
 .nav-links {
@@ -54,7 +70,7 @@ nav {
 }
 
 a {
-  color: #ffffff;
+  color: var(--color-link);
   text-decoration: none;
   text-decoration-color: white;
   text-underline-offset: 1rem;
@@ -63,8 +79,8 @@ a {
 a:hover {
   text-decoration: underline;
   text-underline-offset: 1rem;
-  color: #80fbbe;
-  text-decoration-color: #80fbbe;
+  color: var(--color-link-hover);
+  text-decoration-color: var(--color-link-hover);
 }
 
 .logo {
@@ -73,7 +89,7 @@ a:hover {
 
 .logo p {
   font-size: 1.1rem;
-  color: #ffffff;
+  color: var(--color-panel-font);
   white-space: nowrap;
   margin-left: auto;
 }
@@ -159,7 +175,11 @@ h1 {
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  background-image: linear-gradient(to right, #80fbbe 40%, #4bcfe0 60%);
+  background-image: linear-gradient(
+    to right,
+    var(--color-text-gradient-start) 40%,
+    var(--color-text-gradient-end) 60%
+  );
 }
 
 .header-content h1 {
@@ -173,7 +193,11 @@ h2 {
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  background-image: linear-gradient(to left, #80fbbe 0%, #4bcfe0 100%);
+  background-image: linear-gradient(
+    to right,
+    var(--color-text-gradient-start) 40%,
+    var(--color-text-gradient-end) 60%
+  );
   font-weight: normal;
 }
 
@@ -184,7 +208,11 @@ h3 {
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  background-image: linear-gradient(to left, #80fbbe 0%, #4bcfe0 100%);
+  background-image: linear-gradient(
+    to right,
+    var(--color-text-gradient-start) 40%,
+    var(--color-text-gradient-end) 60%
+  );
 }
 
 /* Paragraphs */
@@ -193,7 +221,7 @@ p {
   font-size: 1.5rem;
   margin: 2rem 20%;
   text-align: justify;
-  color: #c7c7c7;
+  color: var(--color-paragraph);
   line-height: 150%;
 }
 
@@ -219,7 +247,7 @@ p {
 figcaption {
   font-size: 14px;
   font-weight: bold;
-  color: grey;
+  color: var(--color-caption);
   margin: 5rem 15%;
   margin-top: 0%;
   padding: 5px;
@@ -271,20 +299,24 @@ h6 {
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  background-image: linear-gradient(to left, #80fbbe 0%, #4bcfe0 100%);
+  background-image: linear-gradient(
+    to right,
+    var(--color-text-gradient-start) 40%,
+    var(--color-text-gradient-end) 60%
+  );
 }
 
 .panel-container {
   display: flex;
   justify-content: space-around;
   padding: 3% 7%;
-  background-color: #000000;
+  background-color: var(--color-panel-background);
 }
 
 .panel h2 {
   margin-top: 0.5em;
   font-size: 1.6em;
-  color: #ffffff;
+  color: var(--color-panel-font);
 }
 
 .panel p {
@@ -315,8 +347,8 @@ h6 {
 
 .panel-container a {
   width: 22%;
-  background-color: #21282b;
-  color: #fff;
+  background-color: var(--color-panel-link);
+  color: var(--color-panel-font);
   padding: 20px;
   box-sizing: border-box;
   border-radius: 10px;
@@ -330,7 +362,7 @@ h6 {
 
 /* Footer */
 footer {
-  background-color: #131313;
+  background-color: var(--color-footer);
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -346,7 +378,7 @@ footer {
 .footer-content a {
   margin: 10px;
   text-decoration: none;
-  color: #ffffff;
+  color: var(--color-link);
 }
 
 .footer-content a img {
