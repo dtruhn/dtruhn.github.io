@@ -10,7 +10,7 @@
   --color-panel-background: #000000;
   --color-panel-font: #ffffff;
   --color-panel-link: #21282b;
-  --color-footer: #131313;
+  --color-footer: #07090a;
 }
 
 /* Global Styles */
@@ -22,7 +22,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   font-family: "Montserrat", sans-serif;
   background-color: var(--color-background);
   height: 100%;
@@ -44,7 +45,7 @@ a,
 
 #content {
   overflow: auto;
-  padding-bottom: 40px; /* Height of the footer */
+  padding-bottom: 54px; /* Height of the footer */
 }
 
 /* Navbar */
@@ -340,10 +341,9 @@ h6 {
 footer {
   background-color: var(--color-footer);
   position: relative;
-  bottom: 0;
   width: 100%;
-  height: 40px; /* Height of the footer */
-  margin-top: -40px; /* Height of the footer */
+  height: 54px; /* Height of the footer */
+  margin-top: -54px; /* Height of the footer */
   text-align: center;
   clear: both;
 }
@@ -351,11 +351,9 @@ footer {
 .footer-content {
   display: flex;
   justify-content: space-between;
-  margin: auto;
-}
-
-.footer-content a {
-  margin: 20px;
+  align-items: center;
+  margin-left: 32px;
+  margin-right: 32px;
   text-decoration: none;
   color: var(--color-link);
 }
@@ -363,6 +361,8 @@ footer {
 .footer-content a img {
   width: 30px;
   height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /* Media Queries for Responsive Design */
