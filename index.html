@@ -9,128 +9,69 @@
   </head>
   <body>
     <div id="wrapper">
-      <nav id="desktop-nav">
-        <div class="logo">
-          <!-- <a href="index.html"
-          ><img src="assets/logoplaceholder.svg" alt="our Logo" id="logo-img" />
-        </a> -->
-          <a href="index.html">truhn.ai</a>
+      <div class="content">
+        <header-component></header-component>
+        <header></header>
+        <div class="header-content">
+          <h1>Lab for Artificial Intelligence in Medicine</h1>
+          <p>
+            We are a young, diverse, and interdisciplinary team of scientists
+            dedicated to developing deep learning methods for medical
+            applications. Our goal is to extract valuable knowledge from
+            clinical routine data and advance diagnostics and treatment in
+            precision medicine.
+          </p>
+          <p>
+            We are based within the Department of Diagnostic and Interventional
+            Radiology of RWTH Aachen in close proximity to the Netherlands and
+            Belgium.
+          </p>
         </div>
-        <div>
-          <ul class="nav-links">
-            <!-- <li><a href="index.html" id="current">Home</a></li> -->
-            <li><a href="team.html">Team</a></li>
-            <li><a href="our-research.html">Research</a></li>
-
-            <li><a href="funding.html">Funding</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <!-- <li><a href="impressum.html">Impressum</a></li> -->
-          </ul>
+        <div class="panel-container">
+          <a href="team.html">
+            <div class="panel">
+              <div class="icon-team">
+                <img src="assets/team.svg" alt="Team" />
+              </div>
+              <h2>OUR TEAM</h2>
+              <p>Learn about us and the talented individuals in our group.</p>
+            </div>
+          </a>
+          <a href="our-research.html">
+            <div class="panel">
+              <div class="icon-research">
+                <img src="assets/our-reasearch.svg" alt="Research" />
+              </div>
+              <h2>OUR RESEARCH</h2>
+              <p>
+                See what we are working on and learn about our published papers.
+              </p>
+            </div>
+          </a>
+          <a href="funding.html">
+            <div class="panel">
+              <div class="icon-funding">
+                <img src="assets/funding.svg" alt="Funding" />
+              </div>
+              <h2>OUR FUNDING</h2>
+              <p>Discover how our research is supported by our funders.</p>
+            </div>
+          </a>
+          <a href="contact.html">
+            <div class="panel">
+              <div class="icon-contact-us">
+                <img src="assets/contact.svg" alt="Contact Us" />
+              </div>
+              <h2>CONTACT US</h2>
+              <p>
+                Get in touch with us for potential collaborations or to join us.
+              </p>
+            </div>
+          </a>
         </div>
-      </nav>
-      <nav id="hamburger-nav">
-        <div class="logo">
-          <!--  <img src="assets/logoplaceholder.svg" alt="our Logo" id="logo-img" /> -->
-          <p>TruhnLab</p>
-        </div>
-        <div class="hamburger-menu">
-          <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div class="menu-links">
-            <li>
-              <a href="index.html" onclick="toggleMenu()">Home</a>
-            </li>
-            <li><a href="team.html" onclick="toggleMenu()">Team</a></li>
-            <li>
-              <a href="our-research.html" onclick="toggleMenu()">Research</a>
-            </li>
-
-            <li>
-              <a href="funding.html" onclick="toggleMenu()">Funding</a>
-            </li>
-            <li>
-              <a href="contact.html" onclick="toggleMenu()">Contact</a>
-            </li>
-            <li>
-              <a href="impressum.html" onclick="toggleMenu()">Impressum</a>
-            </li>
-          </div>
-        </div>
-      </nav>
-      <header>
-        <!-- <div class="header-image">
-            <img src="assets/uka-radiologie.jpg" alt="Lab for Artificial Intelligence in Medicine @ Uniklinik RWTH Aachen" />
-        </div> -->
-      </header>
-      <div class="header-content">
-        <h1>Lab for Artificial Intelligence in Medicine</h1>
-        <p>
-          We are a young, diverse, and interdisciplinary team of scientists
-          dedicated to developing deep learning methods for medical
-          applications. Our goal is to extract valuable knowledge from clinical
-          routine data and advance diagnostics and treatment in precision
-          medicine.
-        </p>
-        <p>
-          We are based within the Department of Diagnostic and Interventional
-          Radiology of RWTH Aachen in close proximity to the Netherlands and
-          Belgium.
-        </p>
-      </div>
-      <div class="panel-container">
-        <a href="team.html">
-          <div class="panel">
-            <div class="icon-team">
-              <img src="assets/team.svg" alt="Team" />
-            </div>
-            <h2>OUR TEAM</h2>
-            <p>Learn about us and the talented individuals in our group.</p>
-          </div>
-        </a>
-        <a href="our-research.html">
-          <div class="panel">
-            <div class="icon-research">
-              <img src="assets/our-reasearch.svg" alt="Research" />
-            </div>
-            <h2>OUR RESEARCH</h2>
-            <p>
-              See what we are working on and learn about our published papers.
-            </p>
-          </div>
-        </a>
-        <a href="funding.html">
-          <div class="panel">
-            <div class="icon-funding">
-              <img src="assets/funding.svg" alt="Funding" />
-            </div>
-            <h2>OUR FUNDING</h2>
-            <p>Discover how our research is supported by our funders.</p>
-          </div>
-        </a>
-        <a href="contact.html">
-          <div class="panel">
-            <div class="icon-contact-us">
-              <img src="assets/contact.svg" alt="Contact Us" />
-            </div>
-            <h2>CONTACT US</h2>
-            <p>
-              Get in touch with us for potential collaborations or to join us.
-            </p>
-          </div>
-        </a>
       </div>
     </div>
-    <footer>
-      <div class="footer-content">
-        <a href="impressum.html">Impressum</a>
-        <a href="https://twitter.com/laim_uka">
-          <img src="assets/x-logo.svg" alt="Twitter" />
-        </a>
-      </div>
-    </footer>
+    <footer-component></footer-component>
     <script src="script.js"></script>
   </body>
 </html>
