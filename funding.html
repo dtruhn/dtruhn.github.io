@@ -11,7 +11,7 @@
   </head>
   <body>
     <div id="wrapper">
-      <div id="content">
+      <div id="content" class="container">
         <header-component></header-component>
         <header></header>
         <div class="header-container">
@@ -20,11 +20,13 @@
             We are currently funded by the German Research Foundation (DFG), the
             Federal Ministry of Education and Research and the European Union.
           </p>
-          <img
-            class="img-odelia"
-            src="assets/ODELIA_logo_color.svg"
-            alt="ODELIA Logo"
-          />
+          <a href="https://odelia.ai/">
+            <img
+              class="img-odelia"
+              src="assets/ODELIA_logo_color.svg"
+              alt="ODELIA Logo"
+            />
+          </a>
           <br />
           <h2 class="funding">
             ODELIA - Open Source Swarm Learning to Empower Medical AI
@@ -60,7 +62,8 @@
             Start Date: January 1, 2023<br />
             End Date: December 31, 2027<br />
             Total Funding: around € 8,691,755.00<br />
-            This project has received funding from the European Union`s Horizon
+            Own Funding: € 1.377.450,00<br />
+            This project receives funding from the European Union`s Horizon
             Europe research and innovation programme under grant agreement No.
             101057091.
           </p>
@@ -80,7 +83,7 @@
           </figure>
         </div>
 
-        <div class="header-container">
+        <div class="funding-container">
           <img
             class="img-odelia"
             src="assets/liver.webp"
@@ -125,8 +128,9 @@
             Start Date: March 1, 2023<br />
             End Date: February, 28, 2026<br />
             Total Funding: € 491.788,80<br />
+            Own Funding: € 306.619,17<br />
             This project has received funding from the Federal Ministry of
-            Education and Research under grant agreement No. 100582595.
+            Education and Research under grant agreement No. 031L0312C.
           </p>
           <img
             class="img-odelia"
@@ -134,10 +138,168 @@
             alt="Bundesministerium für bildung und forschung Logo"
           />
         </div>
-        <h2>SWAG</h2>
-        <h2>DFG Mamma</h2>
-        <h2>DFG Athrosefrüherkennung</h2>
-        <h2>DFG Computational Biomechanics</h2>
+        <div class="funding-container">
+          <img class="img-swag" src="assets/swag.png" alt="SWAG Logo" />
+          <h2>SWAG</h2>
+          <p>
+            Schwarmlernen und Generative Modelle zur Synthese und Nutzbarmachung
+            hochqualitativer Daten in der Krebsmedizin - SWAG
+          </p>
+          <p>
+            Modern cancer research is generating more extensive data sets (big
+            data) than ever. The data originates from molecular and biochemical
+            analyses, modern imaging procedures, clinical studies or depicts the
+            course of a patient's disease. These treasures of data sets need to
+            be exploited in the future. New computer-aided approaches to use
+            such data, namely artificial intelligence, machine learning and
+            statistics are of great importance for the improved analysis and
+            extraction of research-relevant information. With this funding
+            guideline as part of the “Nationale Dekade gegen Krebs” the Federal
+            Ministry of Education and Research (BMBF) intends to provide
+            research groups from the field of data analysis with low-threshold
+            access to high-quality data from translational, biomedical cancer
+            research and routine oncological care. At the same time, researchers
+            from the fields of data acquisition and data analysis work closely
+            together to address clinically relevant oncological questions. In
+            addition, the culture of data sharing for research purposes is to be
+            promoted.
+          </p>
+          <p>
+            The SWAG project is developing AI methods for renal cell carcinoma
+            that generate synthetic data from real patient data. Generative AI
+            algorithms are trained jointly across several hospitals using swarm
+            learning without exchanging the actual data. The resulting
+            pseudonymized synthetic data is evaluated according to defined
+            criteria.
+          </p>
+          <h3>Facts and figures</h3>
+          <p>
+            Coordinator: University Hospital Würzburg<br />
+            Number of Partners: 5<br />
+            Start Date: November 1, 2022<br />
+            End Date: October 31, 2024<br />
+            Own Funding: € 192.510,80<br />
+            This project receives funding from the Federal Ministry of Education
+            and Research under grant agreement No. 01KD2215B.
+          </p>
+
+        </div>
+        <div class="funding-container">
+          <img class="img-dfg" src="assets/mamma.png" alt="DFG Logo" />
+          <h2>DFG Mamma</h2>
+          <p>
+            Breast cancer is the most frequent type of cancer in women [DeS14].
+            Although dedicated screening programs have been implemented in many
+            countries already decades ago, breast cancer continues to represent
+            a major cause of cancer related death in women, second only to lung
+            cancer. Both, insufficient sensitivity for biologically relevant
+            cancers (‘underdiagnosis’), as well as unwanted depiction of
+            biologically inert disease (‘overdiagnosis’), limit the net benefit
+            that is associated with mammographic screening.
+          </p>
+          <p>
+            The current recommendation of the European Society of Breast Imaging
+            (EUSOBI) calls for the introduction of MRI based screening for women
+            with extremely dense breast tissue to save lives. However, an
+            important roadblock to the introduction of MRI based screening for
+            breast cancer is the limited availability of widely available
+            expertise and trained staff. Recent studies have shown that AI
+            support can enhance radiologists’ performance. Thus, a widespread
+            introduction of screening may become feasible through the
+            introduction of an AI system that supports (potentially less
+            experienced) radiologists in the diagnostic assessment of these
+            studies. Accordingly, there is an urgent clinical need for methods
+            that aid in the interpretation and differential diagnosis of
+            DCE-breast MRI. Based on our previous work, we believe that modern
+            methods of image analysis (deep learning algorithms) can be used to
+            retrieve diagnostic information from breast MRI screening studies
+            with an accuracy matches that of experienced breast radiologists.
+          </p>
+          <p>
+            In a recent works on the characterization of breast cancer at
+            patient level, multi-step approaches to detection and classification
+            were pursued. These are based on the identification of suspicious
+            regions (in a step called ’region proposal’), which are classified
+            in a second step. Algorithms that both detect and classify breast
+            cancer based on a clinical DCE MRI data set struggle with achieving
+            clinical usability due to two major reasons: First, enhancement in
+            breast MRI is not only seen in breast cancer, but also in a broad
+            variety of benign changes, and even in the normal fibroglandular
+            tissue. Thus, there is a huge range of what constitutes a ’normal’,
+            i.e. ’negative’ breast MRI exam, making it hard to achieve both
+            acceptable sensitivity and specificity. Second, machine learning
+            algorithms have hitherto almost exclusively been evaluated on single
+            institutional datasets, leaving open the immensely important
+            question of transferrability of their results to datasets from
+            different sites. This poses a serious obstacle that still has to be
+            overcome in order to bring seemingly impressive results from
+            workbench to clinics. With this research proposal we aim to tackle
+            this problem by evaluating our algorithms in a multi-institutional
+            clinical evaluation.
+          </p>
+          <h3>Facts and figures</h3>
+          <p>
+            Coordinator: University Hospital RWTH Aachen<br />
+            Number of Partners: 0<br />
+            Start Date: January 15, 2024<br />
+            End Date: January 14, 2027<br />
+            Total Funding: € 774.645,00<br />
+            This project has received funding from the Federal Ministry of
+            Education and Research under grant agreement No. 515639690.
+          </p>
+
+        </div>
+
+        <div class="funding-container">
+          <img class="img-dfg" src="assets/mamma.png" alt="DFG Logo" />
+          <h2>DFG Detection of Early Osteoarthritis</h2>
+          <p>
+            The aim of the project is the experimental and clinical-scientific
+            evaluation of non-invasive assessment of cartilage functionality.
+            The diagnosis of early osteoarthritis continues to present
+            diagnostic difficulties despite advancing technical developments, so
+            that scientific approaches to diagnosis in this area, not least
+            against the background of emerging demographic developments in
+            Western societies, are of great clinical relevance.
+          </p>
+          <h3>Facts and figures</h3>
+          <p>
+            Coordinator: University Hospital RWTH Aachen<br />
+            Number of Partners: 0<br />
+            Start Date: March 1, 2019<br />
+            End Date: May 31, 2025<br />
+            Total Funding: € 569.910,00<br />
+            This project has received funding from the Federal Ministry of
+            Education and Research under grant agreement No. 417508432.
+          </p>
+
+        </div>
+
+        <div class="funding-container">
+          <img class="img-dfg" src="assets/mamma.png" alt="DFG Logo" />
+          <h2>DFG Computational Biomechanics</h2>
+          <p>
+            The overarching objective of the proposed basic research project is
+            the development of a constitutive model that can predict from
+            imaging data the mechanical properties of articular cartilage (i.e.,
+            cartilage functionality). If proven successful, the model-based
+            predictions of tissue functionality based on imaging alone may be
+            extended to other tissues and may provide a valid and substantiated
+            framework for the non-invasive evaluation of early-stage cartilage
+            degeneration and OA.
+          </p>
+          <h3>Facts and figures</h3>
+          <p>
+            Coordinator: University Hospital RWTH Aachen<br />
+            Number of Partners: 2<br />
+            Start Date: January 1, 2024<br />
+            End Date: December 31, 2027<br />
+            Own Funding: € 368.890,00<br />
+            This project has received funding from the Federal Ministry of
+            Education and Research under grant agreement No. 517243167.
+          </p>
+          
+        </div>
       </div>
     </div>
     <footer-component></footer-component>

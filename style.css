@@ -1,5 +1,5 @@
 :root {
-  --color-background: #131313;
+  --color-background: #2d2f38;
   --color-navbar: #07090a;
   --color-link: #ffffff;
   --color-link-hover: #80fbbe;
@@ -46,6 +46,10 @@ a,
 #content {
   overflow: auto;
   padding-bottom: 54px; /* Height of the footer */
+}
+
+div.container>div:nth-of-type(odd) {
+  background: #0c0f12;
 }
 
 /* Navbar */
@@ -217,7 +221,7 @@ p {
   margin: 5rem 15%;
 }
 
-.img-odelia {
+.img-odelia, .img-swag ,.img-dfg {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -243,6 +247,10 @@ figcaption {
 .facts {
   text-align: left;
   margin: 5rem 15%;
+}
+
+.funding-container {
+  padding: 3% 7%;
 }
 
 /* team */
