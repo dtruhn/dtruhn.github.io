@@ -182,7 +182,7 @@ h3,
 h6 {
   font-size: 4rem;
   text-align: center;
-  margin-top: 2rem;
+  padding-top: 2rem;
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
