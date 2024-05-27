@@ -48,7 +48,7 @@ a,
   padding-bottom: 54px; /* Height of the footer */
 }
 
-div.container>div:nth-of-type(odd) {
+div.container > div:nth-of-type(even) {
   background: #0c0f12;
 }
 
@@ -221,7 +221,9 @@ p {
   margin: 5rem 15%;
 }
 
-.img-odelia, .img-swag ,.img-dfg {
+.img-odelia,
+.img-swag,
+.img-dfg {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -416,3 +418,77 @@ footer {
     margin-bottom: 1rem;
   }
 }
+
+/* Publicaions */
+.publications {
+  padding-bottom: 5%;
+  padding-right: 5%;
+  padding-left: 5%;
+  position: relative;
+}
+.publications h2 {
+  text-align: center;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+.publications-section:nth-child(odd) {
+  text-align: left;
+  margin-right: 45%;
+
+}
+
+
+.publications:nth-child(odd) img {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  max-width: 30%;
+  max-height: 100%;
+  object-fit: contain;
+  margin-right: 10%;
+}
+
+.publications-section:nth-child(even) {
+  text-align: left;
+  margin-left: 45%;
+}
+
+.publications:nth-child(even) img {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  max-width: 30%;
+  max-height: 100%;
+  object-fit: contain;
+  margin-left: 10%;
+}
+
+.publications:nth-child(even) {
+  background: #0c0f12;
+}
+
+div.publications ul {
+  list-style-type: none; /* Removes default bullet points */
+  padding-left: 0; /* Removes indentation */
+  margin: 0 auto; /* Centers the list in its container */
+  font-family: Arial, sans-serif; /* Example font family, adjust as needed */
+  font-size: 18px; /* Example font size, adjust as needed */
+  color: var(--color-paragraph);  /* White color, adjust if your text is different */
+  line-height: 1.5; /* Example line height, adjust as needed */
+  width: 65%; /* Adjust this value to control the width */
+  max-width: 600px; /* Prevents the list from becoming too wide on larger screens */
+}
+
+div.publications ul li::before {
+  content: "• "; /* Adds a bullet before each item */
+  color: var(--color-link-hover); /* Example bullet color, can be set to match design */
+}
+
+div.publications ul li {
+  margin-bottom: 10px; /* Adds space between items, adjust as needed */
+}
+
+
