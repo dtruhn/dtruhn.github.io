@@ -10,28 +10,20 @@ class Header extends HTMLElement {
     this.innerHTML = `
   <nav id="desktop-nav">
         <div class="logo">
-          <!-- <a href="index.html"
-          ><img src="assets/logoplaceholder.svg" alt="our Logo" id="logo-img" />
-        </a> -->
           <a href="index.html">truhn.ai</a>
         </div>
         <div>
           <ul class="nav-links">
-            <!-- <li><a href="index.html" id="current">Home</a></li> -->
+            <li><a href="index.html">Home</a></li>
             <li><a href="team.html">Team</a></li>
             <li><a href="our-research.html">Research</a></li>
-
             <li><a href="funding.html">Funding</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <!-- <li><a href="impressum.html">Impressum</a></li> -->
           </ul>
         </div>
       </nav>
       <nav id="hamburger-nav">
       <div class="logo">
-      <!-- <a href="index.html"
-      ><img src="assets/logoplaceholder.svg" alt="our Logo" id="logo-img" />
-    </a> -->
       <a href="index.html">truhn.ai</a>
     </div>
         <div class="hamburger-menu">
@@ -48,7 +40,6 @@ class Header extends HTMLElement {
             <li>
               <a href="our-research.html" onclick="toggleMenu()">Research</a>
             </li>
-
             <li>
               <a href="funding.html" onclick="toggleMenu()">Funding</a>
             </li>
