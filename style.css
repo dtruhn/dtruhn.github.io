@@ -179,6 +179,7 @@ h1,
 .header-content h1,
 h2,
 h3,
+h4,
 h6 {
   font-size: 4rem;
   text-align: center;
@@ -482,24 +483,91 @@ footer {
 }
 
 div.publications ul {
-  list-style-type: none; /* Removes default bullet points */
-  padding-left: 0; /* Removes indentation */
-  margin: 0 auto; /* Centers the list in its container */
-  font-family: Arial, sans-serif; /* Example font family, adjust as needed */
-  font-size: 18px; /* Example font size, adjust as needed */
-  color: var(--color-paragraph);  /* White color, adjust if your text is different */
-  line-height: 1.5; /* Example line height, adjust as needed */
-  width: 65%; /* Adjust this value to control the width */
-  max-width: 600px; /* Prevents the list from becoming too wide on larger screens */
+  list-style-type: none; 
+  padding-left: 0; 
+  margin: 0 auto; 
+  font-size: 18px; 
+  color: var(--color-paragraph);  
+  line-height: 1.5; 
+  width: 65%; 
+  max-width: 600px; 
 }
 
 div.publications ul li::before {
-  content: "• "; /* Adds a bullet before each item */
-  color: var(--color-link-hover); /* Example bullet color, can be set to match design */
+  content: "• "; 
+  color: var(--color-link-hover); 
 }
 
 div.publications ul li {
-  margin-bottom: 10px; /* Adds space between items, adjust as needed */
+  margin-bottom: 10px; 
 }
 
+/* Contact Us */
+.opportunity-list  {
+  list-style-type: none; 
+  padding-left: 0; 
+  margin: 0 auto; 
+  color: var(--color-paragraph);  
+  line-height: 1.5; 
+  font-size: 1.2rem;
+  margin: 2rem 20%;
+}
 
+.opportunity-list  li::before {
+  content: "• "; 
+  color: var(--color-link-hover); 
+}
+
+.opportunity-list  li {
+  margin-bottom: 10px; 
+}
+
+.puzzle-container {
+  background-color: #0c0f12;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.puzzle-container h4 {
+  font-size: 30px;
+}
+
+.puzzle-container p {
+  color: #555;
+  font-size: 25px;
+  line-height: 1.6;
+
+}
+
+.puzzle-container img {
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+/* Custom styles for different node types */
+img[src="assets/empty-white-circle.svg"] {
+  width: 32px;
+  height: 32px;
+}
+
+img[src="assets/empty-blue-circle.svg"] {
+  width: 32px;
+  height: 32px;
+}
+
+img[src="assets/science-circle.svg"], img[src="assets/ai-circle.svg"] {
+  width: 32px;
+  height: 32px;
+}
+
+.graph-puzzle {
+  display: block;
+  width: 38%;
+  height: auto;
+  margin-top: 20px;
+  margin-right: auto;
+}
+.explanation-text {
+  width: 55%; /* Adjust this value as needed */
+}
