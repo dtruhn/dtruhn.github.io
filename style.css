@@ -526,7 +526,7 @@ div.publications ul li {
 }
 
 .puzzle-container {
-  background-color: #0c0f12;
+  background-color: #f2f2f2;
   display: flex;
   justify-content: space-between;
   align-items: start;
@@ -534,18 +534,20 @@ div.publications ul li {
 
 .puzzle-container h4 {
   font-size: 30px;
+  color: #3d3d3d;
 }
 
 .puzzle-container p {
   color: #555;
-  font-size: 25px;
+  font-size: 20px;
   line-height: 1.6;
-
+  vertical-align: middle;
 }
 
 .puzzle-container img {
   vertical-align: middle;
   margin-right: 8px;
+  scale: 80%;
 }
 
 /* Custom styles for different node types */
@@ -572,5 +574,5 @@ img[src="assets/science-circle.svg"], img[src="assets/ai-circle.svg"] {
   margin-right: auto;
 }
 .explanation-text {
-  width: 55%; /* Adjust this value as needed */
+  width: 70%; /* Adjust this value as needed */
 }
