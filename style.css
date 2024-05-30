@@ -206,6 +206,7 @@ h2 {
 
 h3 {
   font-size: 2rem;
+  margin: 2rem 20%;
 }
 
 /* Paragraphs */
@@ -254,7 +255,8 @@ figcaption {
 }
 
 .funding-container {
-  padding: 3% 7%;
+  padding-bottom: 3%;
+  padding-top: 5%;
 }
 
 /* team */
