@@ -261,9 +261,7 @@ figcaption {
 
 /* team */
 
-
 .team-member div p {
-
   display: block;
   margin: 1rem 15%;
   padding: 2rem;
@@ -404,7 +402,6 @@ footer {
 
   h2 {
     font-size: 2rem;
-    
   }
 
   h3 {
@@ -452,9 +449,7 @@ footer {
 .publications-section:nth-child(odd) {
   text-align: left;
   margin-right: 45%;
-
 }
-
 
 .publications:nth-child(odd) img {
   position: absolute;
@@ -488,68 +483,82 @@ footer {
 }
 
 div.publications ul {
-  list-style-type: none; 
-  padding-left: 0; 
-  margin: 0 auto; 
-  font-size: 18px; 
-  color: var(--color-paragraph);  
-  line-height: 1.5; 
-  width: 65%; 
-  max-width: 600px; 
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0 auto;
+  font-size: 18px;
+  color: var(--color-paragraph);
+  line-height: 1.5;
+  width: 65%;
+  max-width: 600px;
 }
 
 div.publications ul li::before {
-  content: "• "; 
-  color: var(--color-link-hover); 
+  content: "• ";
+  color: var(--color-link-hover);
 }
 
 div.publications ul li {
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
 }
 
 /* Contact Us */
-.opportunity-list  {
-  list-style-type: none; 
-  padding-left: 0; 
-  margin: 0 auto; 
-  color: var(--color-paragraph);  
-  line-height: 1.5; 
+.opportunity-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0 auto;
+  color: var(--color-paragraph);
+  line-height: 1.5;
   font-size: 1.2rem;
   margin: 2rem 20%;
 }
 
-.opportunity-list  li::before {
-  content: "• "; 
-  color: var(--color-link-hover); 
+.opportunity-list li::before {
+  content: "• ";
+  color: var(--color-link-hover);
 }
 
-.opportunity-list  li {
-  margin-bottom: 10px; 
+.opportunity-list li {
+  margin-bottom: 10px;
 }
 
 .puzzle-container {
   background-color: #f2f2f2;
   display: flex;
-  justify-content: space-between;
-  align-items: start;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .puzzle-container h4 {
   font-size: 30px;
   color: #3d3d3d;
+  text-align: center;
+  width: 100%;
+}
+
+.puzzle-container .content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.puzzle-container .explanation-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .puzzle-container p {
   color: #555;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 1.6;
-  vertical-align: middle;
 }
 
 .puzzle-container img {
-  vertical-align: middle;
   margin-right: 8px;
   scale: 80%;
+
 }
 
 /* Custom styles for different node types */
@@ -563,7 +572,8 @@ img[src="assets/empty-blue-circle.svg"] {
   height: 32px;
 }
 
-img[src="assets/science-circle.svg"], img[src="assets/ai-circle.svg"] {
+img[src="assets/science-circle.svg"],
+img[src="assets/ai-circle.svg"] {
   width: 32px;
   height: 32px;
 }
