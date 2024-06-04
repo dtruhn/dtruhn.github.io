@@ -265,6 +265,7 @@ figcaption {
   display: block;
   margin: 1rem 15%;
   padding: 2rem;
+  text-align: justify;
 }
 
 .team-member img {
@@ -431,6 +432,7 @@ footer {
     width: 100%;
     margin-bottom: 1rem;
   }
+  
 }
 
 /* Publicaions */
