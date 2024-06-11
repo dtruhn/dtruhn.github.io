@@ -101,3 +101,48 @@
     text-align: justify;
   }
 }
+
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 0.8rem;
+  }
+
+  h1,
+  .header-content h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin: 1rem 10%;
+  }
+
+  .nav-links {
+    font-size: 1rem;
+  }
+
+  .team-member img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .panel-container {
+    flex-direction: column;
+    padding: 5% 3%;
+  }
+
+  .panel-container a {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+}
