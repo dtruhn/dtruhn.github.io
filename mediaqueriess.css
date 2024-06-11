@@ -43,6 +43,7 @@
     font-size: 1rem;
     margin: 1rem 10%;
     padding: 0;
+    text-align: center;
   }
   .team-member img {
     width: 100px;
@@ -66,10 +67,14 @@
     margin: 1rem 10%;
     padding: 0;
   }
+
+  /* Contact us */
   .opportunity-list {
     margin: 1rem 5%;
-    text-align: justify;
+    text-align: center;
   }
+
+  /* Puzzle */
   .puzzle-container .content {
     flex-direction: column;
   }
@@ -78,12 +83,9 @@
     order: 1;
   }
 
-
-
   .puzzle-container .graph-puzzle {
     order: 2;
     width: 100%;
-
   }
 
   .puzzle-container .explanation-text {
