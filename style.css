@@ -504,6 +504,15 @@ div.publications ul li {
   margin-bottom: 10px;
 }
 
+div.publications ul li a{
+  text-decoration: none;
+  color:  var(--color-paragraph);
+}
+
+div.publications ul li a:hover{
+  color: #80fbe6e5;
+}
+
 /* Contact Us */
 .opportunity-list {
   list-style-type: none;
