@@ -211,15 +211,6 @@ a:hover {
   color: var(--color-navbar);
 }
 
-@media screen and (max-width: 768px) {
-  #desktop-nav {
-    display: none;
-  }
-
-  #hamburger-nav {
-    display: block;
-  }
-}
 
 /* Text */
 
