@@ -119,6 +119,7 @@ a:hover {
   position: relative;
   display: inline-block;
   margin-right: 2rem;
+  z-index: 1;
 }
 
 .hamburger-icon {
