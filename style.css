@@ -137,15 +137,15 @@ a:hover {
   height: 2px;
   background-color: white;
   transform-origin: left center;
-  transition: opacity 200ms ease-in-out, width 200ms ease-in-out,
-    rotate 200ms ease-in-out, translate 200ms ease-in-out,
-    background-color 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out, width 200ms ease-in-out, rotate 200ms ease-in-out, translate 200ms ease-in-out, background-color 200ms ease-in-out;
 }
+
 
 .hamburger-icon.open span:first-child {
   rotate: 45deg;
   width: calc(24px * 1.41421356237);
   translate: 0 calc(2px / -2);
+
 }
 
 .hamburger-icon.open span:nth-child(2) {
@@ -222,6 +222,7 @@ a:hover {
   background-color: var(--color-link-hover);
   color: var(--color-navbar);
 }
+
 
 /* Text */
 
@@ -482,6 +483,7 @@ footer {
     width: 100%;
     margin-bottom: 1rem;
   }
+  
 }
 
 /* Publicaions */
@@ -541,45 +543,11 @@ div.publications ul {
   list-style-type: none;
   padding-left: 0;
   margin: 0 auto;
-}
-
-/* Publicaions */
-.publications {
-  padding-bottom: 5%;
-  padding-right: 5%;
-  padding-left: 5%;
-  position: relative;
-}
-.publications h2 {
-  text-align: center;
-  margin-bottom: 2%;
-  margin-top: 2%;
-}
-
-.publications p {
-  margin: 2rem 5%;
-}
-
-.publications-section:nth-child(odd) {
-  text-align: left;
-  margin-right: 45%;
-}
-
-.publications:nth-child(odd) img {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  max-width: 30%;
-  max-height: 100%;
-  object-fit: contain;
-  margin-right: 10%;
-}
-
-.publications-section:nth-child(even) {
-  text-align: left;
-  margin-left: 45%;
+  font-size: 18px;
+  color: var(--color-paragraph);
+  line-height: 1.5;
   width: 80%;
+
 }
 
 div.publications ul li::before {
@@ -591,12 +559,12 @@ div.publications ul li {
   margin-bottom: 10px;
 }
 
-div.publications ul li a {
+div.publications ul li a{
   text-decoration: none;
-  color: var(--color-paragraph);
+  color:  var(--color-paragraph);
 }
 
-div.publications ul li a:hover {
+div.publications ul li a:hover{
   color: #80fbe6e5;
 }
 
@@ -656,6 +624,7 @@ div.publications ul li a:hover {
 .puzzle-container img {
   margin-right: 8px;
   scale: 80%;
+
 }
 
 /* Custom styles for different node types */
