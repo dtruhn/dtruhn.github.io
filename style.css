@@ -127,29 +127,40 @@ a:hover {
   flex-direction: column;
   justify-content: space-between;
   height: 24px;
-  width: 30px;
+  width: 40px;
   cursor: pointer;
 }
 
 .hamburger-icon span {
   display: block;
-  width: 100%;
+  width: 40px;
   height: 2px;
   background-color: white;
-  transition: all 0.3 ease-in-out;
+  transform-origin: left center;
+  transition: opacity 200ms ease-in-out, width 200ms ease-in-out, rotate 200ms ease-in-out, translate 200ms ease-in-out, background-color 200ms ease-in-out;
 }
 
 
 .hamburger-icon.open span:first-child {
-  transform: rotate(45deg) translate(10px, 5px);
+  rotate: 45deg;
+  width: calc(24px * 1.41421356237);
+  translate: 0 calc(2px / -2);
+
 }
 
 .hamburger-icon.open span:nth-child(2) {
+  appearance: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  pointer-events: none;
   opacity: 0;
 }
 
 .hamburger-icon.open span:last-child {
-  transform: rotate(-45deg) translate(10px, -5px);
+  rotate: -45deg;
+  width: calc(24px * 1.41421356237);
+  translate: 0 calc(2px / 2);
 }
 
 .hamburger-icon span:first-child {
