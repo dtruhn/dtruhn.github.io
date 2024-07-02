@@ -321,6 +321,7 @@ figcaption {
   box-shadow: 0 0.4rem 4rem 0 rgba(211, 211, 211, 0.5); /* light grey */
 }
 
+
 .team-member h3 {
   margin: 0;
   text-align: left;
@@ -458,10 +459,7 @@ footer {
     font-size: 1rem;
   }
 
-  .team-member img {
-    width: 100px;
-    height: 100px;
-  }
+
 
   .panel-container {
     flex-direction: column;
