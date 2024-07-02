@@ -127,29 +127,40 @@ a:hover {
   flex-direction: column;
   justify-content: space-between;
   height: 24px;
-  width: 30px;
+  width: 40px;
   cursor: pointer;
 }
 
 .hamburger-icon span {
   display: block;
-  width: 100%;
+  width: 40px;
   height: 2px;
   background-color: white;
-  transition: all 0.3 ease-in-out;
+  transform-origin: left center;
+  transition: opacity 200ms ease-in-out, width 200ms ease-in-out, rotate 200ms ease-in-out, translate 200ms ease-in-out, background-color 200ms ease-in-out;
 }
 
 
 .hamburger-icon.open span:first-child {
-  transform: rotate(45deg) translate(10px, 5px);
+  rotate: 45deg;
+  width: calc(24px * 1.41421356237);
+  translate: 0 calc(2px / -2);
+
 }
 
 .hamburger-icon.open span:nth-child(2) {
+  appearance: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  pointer-events: none;
   opacity: 0;
 }
 
 .hamburger-icon.open span:last-child {
-  transform: rotate(-45deg) translate(10px, -5px);
+  rotate: -45deg;
+  width: calc(24px * 1.41421356237);
+  translate: 0 calc(2px / 2);
 }
 
 .hamburger-icon span:first-child {
@@ -494,6 +505,10 @@ footer {
   margin-top: 2%;
 }
 
+.publications p {
+  margin: 2rem 5%;
+}
+
 .publications-section:nth-child(odd) {
   text-align: left;
   margin-right: 45%;
@@ -537,8 +552,8 @@ div.publications ul {
   font-size: 18px;
   color: var(--color-paragraph);
   line-height: 1.5;
-  width: 65%;
-  max-width: 600px;
+  width: 80%;
+
 }
 
 div.publications ul li::before {
@@ -645,5 +660,3 @@ img[src="assets/ai-circle.svg"] {
 .explanation-text {
   width: 70%; /* Adjust this value as needed */
 }
-
-

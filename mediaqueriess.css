@@ -101,3 +101,29 @@
     width: 100%;
   }
 }
+
+@media (max-width: 1000px) {
+  .publications:nth-child(odd) img,
+  .publications:nth-child(even) img {
+    position: static;
+    top: auto;
+    right: auto;
+    left: auto;
+    transform: none;
+    max-width: none;
+    max-height: 550px;
+    object-fit: contain;
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+  }
+
+
+  .publications-section:nth-child(odd),
+  .publications-section:nth-child(even) {
+    text-align: center;
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+  }
+}
