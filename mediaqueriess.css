@@ -7,7 +7,25 @@
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1000px){
+  .panel-container {
+    display: flex; /* Ensure the container uses flexbox */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    padding: 5% 3%;
+    justify-content: space-between; /* This will space out the items evenly */
+  }
+  .panel-container a {
+    width: calc(50% - 1rem); /* Adjust width to allow for margin, ensuring 2 items per row */
+    margin-bottom: 1rem;
+    margin-right: 1rem; /* Add right margin to space out the items */
+  }
+
+  /* To prevent double margin on the right for every 2nd item */
+  .panel-container a:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 770px) {
   #desktop-nav {
     display: none;
   }
