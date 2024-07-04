@@ -583,6 +583,7 @@ div.publications ul li a:hover{
   line-height: 1.5;
   font-size: 1.2rem;
   margin: 2rem 20%;
+  text-align: justify;
 }
 
 .opportunity-list li::before {
@@ -635,19 +636,19 @@ div.publications ul li a:hover{
 
 /* Custom styles for different node types */
 img[src="assets/empty-white-circle.svg"] {
-  width: 32px;
-  height: 32px;
+  width: 45px;
+  height: 45px;
 }
 
 img[src="assets/empty-blue-circle.svg"] {
-  width: 32px;
-  height: 32px;
+  width: 45px;
+  height: 45px;
 }
 
 img[src="assets/science-circle.svg"],
 img[src="assets/ai-circle.svg"] {
-  width: 32px;
-  height: 32px;
+  width: 45px;
+  height: 45px;
 }
 
 .graph-puzzle {

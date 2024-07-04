@@ -7,22 +7,76 @@
   }
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1000px) {
   .panel-container {
-    display: flex; /* Ensure the container uses flexbox */
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    display: flex;
+    flex-wrap: wrap;
     padding: 5% 3%;
-    justify-content: space-between; /* This will space out the items evenly */
+    justify-content: space-between;
   }
   .panel-container a {
-    width: calc(50% - 1rem); /* Adjust width to allow for margin, ensuring 2 items per row */
+    width: calc(50% - 1rem);
     margin-bottom: 1rem;
-    margin-right: 1rem; /* Add right margin to space out the items */
+    margin-right: 1rem;
+
+    .panel-container a:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    .publications:nth-child(odd) img,
+    .publications:nth-child(even) img {
+      position: static;
+      top: auto;
+      right: auto;
+      left: auto;
+      transform: none;
+      max-width: none;
+      max-height: 550px;
+      object-fit: contain;
+      margin-right: 0;
+      margin-left: 0;
+      width: 100%;
+    }
+
+    .publications-section:nth-child(odd),
+    .publications-section:nth-child(even) {
+      text-align: center;
+      margin-right: 0;
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+  /* Puzzle */
+  .puzzle-container .content {
+    flex-direction: column;
   }
 
-  /* To prevent double margin on the right for every 2nd item */
-  .panel-container a:nth-child(2n) {
-    margin-right: 0;
+  .puzzle-container div {
+    order: 1;
+  }
+
+  .puzzle-container .graph-puzzle {
+    order: 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .puzzle-container .explanation-text {
+    order: 3;
+  }
+
+  .puzzle-container .graph-puzzle img {
+    width: 65%; 
+    max-width: 100%; 
+    height: auto;
+    margin-left: auto; 
+    margin-right: auto; 
+  }
+
+  .explanation-text {
+    width: 100%;
   }
 }
 @media screen and (max-width: 770px) {
@@ -116,32 +170,6 @@
   }
 
   .explanation-text {
-    width: 100%;
-  }
-}
-
-@media (max-width: 1000px) {
-  .publications:nth-child(odd) img,
-  .publications:nth-child(even) img {
-    position: static;
-    top: auto;
-    right: auto;
-    left: auto;
-    transform: none;
-    max-width: none;
-    max-height: 550px;
-    object-fit: contain;
-    margin-right: 0;
-    margin-left: 0;
-    width: 100%;
-  }
-
-
-  .publications-section:nth-child(odd),
-  .publications-section:nth-child(even) {
-    text-align: center;
-    margin-right: 0;
-    margin-left: 0;
     width: 100%;
   }
 }
