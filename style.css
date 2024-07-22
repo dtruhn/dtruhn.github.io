@@ -354,6 +354,11 @@ figcaption {
   background: #0c0f12;
 }
 
+.wide-photo-container {
+  position: relative;
+  text-align: center; /* Center the overlay text horizontally */
+}
+
 .wide-photo-container img {
   max-width: 100%;
   height: auto;
@@ -361,6 +366,20 @@ figcaption {
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
+.overlay-text {
+  position: absolute;
+  top: 0; /* Position at the top of the container */
+  left: 50%; /* Move to the center of the container */
+  transform: translateX(-50%); /* Center the element with respect to its width */
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(
+    to right,
+    var(--color-text-gradient-start) 40%,
+    var(--color-text-gradient-end) 100%
+  );
+}
 
 /*publications*/
 
