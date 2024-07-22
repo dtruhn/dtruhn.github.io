@@ -575,25 +575,16 @@ div.publications ul li a:hover{
 }
 
 /* Contact Us */
-.opportunity-list {
-  list-style-type: none;
-  padding-left: 0;
-  margin: 0 auto;
-  color: var(--color-paragraph);
-  line-height: 1.5;
-  font-size: 1.2rem;
-  margin: 2rem 20%;
-  text-align: justify;
+
+
+hr {
+  border: none;
+  border-top: 1px solid var(--color-link-hover);
+  margin: 2rem auto; /* Centers the <hr> */
+  width: 60%; /* Adjust the width as needed */
 }
 
-.opportunity-list li::before {
-  content: "• ";
-  color: var(--color-link-hover);
-}
 
-.opportunity-list li {
-  margin-bottom: 10px;
-}
 
 .puzzle-container {
   background-color: #f2f2f2;
